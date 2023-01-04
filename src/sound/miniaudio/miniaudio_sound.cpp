@@ -108,7 +108,7 @@ std::shared_ptr<SoundController> makeSoundController(const ConfiguredArgValue& c
     //TODO: выбор по номеру или части имени (если цифра 0-9, то номер, иначе часть имени)
     // Loop over each device info and do something with it. Here we just print the name with their index. You may want
     // to give the user the opportunity to choose which device they'd prefer.
-    bool select_default = (conf.at(ARG_BACKEND) == "backend");
+    bool select_default = (conf.at(ARG_BACKEND) == "default");
     bool is_select_num = (conf.at(ARG_BACKEND).size() == 1);
     int sel_index = -1;
     if (is_select_num)
